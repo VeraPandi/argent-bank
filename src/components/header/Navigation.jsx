@@ -1,12 +1,14 @@
 import React from "react";
 import Logo from "./Logo";
-import LoginLinks from "./LoginLinks";
+import LoginLink from "./LoginLink";
+import LogoutLink from "./LogoutLink";
 
 const Navigation = () => {
    return (
       <nav className="main-nav">
          <Logo />
-         <LoginLinks />
+         <LoginLink />
+         <LogoutLink />
       </nav>
    );
 };

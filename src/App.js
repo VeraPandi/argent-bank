@@ -3,7 +3,7 @@ import Home from "./pages/Home.jsx";
 import Login from "./pages/Login.jsx";
 import Profile from "./pages/Profile";
 import Navigation from "./components/header/Navigation";
-import Footer from "./components/Footer";
+import Footer from "./components/footer/Footer";
 import "./styles/main.scss";
 
 const App = () => {
