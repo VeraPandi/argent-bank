@@ -2,11 +2,12 @@
 
 @use "./components/navigation";
 @use "./components/logo";
-@use "./components/loginLinks";
+@use "./components/loginLink";
 @use "./components/hero";
 @use "./components/features";
-@use "./components/form";
-@use "./components/accounts";
+@use "./components/loginForm";
+@use "./components/account";
+@use "./components/userNamesForm";
 @use "./components/footer";
 
 @use "./pages/login";

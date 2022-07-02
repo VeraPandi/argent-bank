@@ -191,6 +191,11 @@ body {
   font-size: 1.2rem;
 }
 
+.email-error,
+.password-error {
+  display: none;
+}
+
 .account {
   display: flex;
   flex-direction: column;
@@ -228,14 +233,6 @@ body {
   width: 100%;
 }
 
-.edit-button {
-  padding: 10px;
-  font-weight: bold;
-  border-color: #00bc77;
-  color: #fff;
-  background-color: #00bc77;
-}
-
 .transaction-button {
   display: block;
   width: 100%;
@@ -261,6 +258,39 @@ body {
     width: 200px;
   }
 }
+.edit-name-wrapper {
+  width: 150px;
+}
+
+.edit-button {
+  margin: 10px 0;
+  padding: 7px 30px;
+  font-weight: bold;
+  border-color: #00bc77;
+  color: #fff;
+  background-color: #00bc77;
+}
+
+.usernames-form {
+  display: flex;
+  justify-content: center;
+}
+
+.usernames-form input {
+  width: 100%;
+  padding: 5px;
+  font-size: 1.1rem;
+}
+
+.right {
+  text-align: start;
+}
+
+.left {
+  margin: 0 15px 0;
+  text-align: end;
+}
+
 .footer {
   display: flex;
   justify-content: center;
