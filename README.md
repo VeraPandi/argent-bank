@@ -2,10 +2,9 @@
 
 [![forthebadge](https://img.shields.io/badge/Made%20with-Create%20React%20App-%2361dafb)](https://reactjs.org/docs/create-a-new-react-app.html) [![forthebadge](https://img.shields.io/badge/Use-Redux-%23764abc)](https://recharts.org/en-US/)
 
-Front-End part of the banking application
+### Front-End part of the banking application
 
 ![This is an image](Argent-Bank-Home.png)
-![Argent-Bank-Home](https://user-images.githubusercontent.com/84042427/177596107-f61bcc62-7950-4a34-9a07-a4c7bb0982c5.png)
 
 ### Resources:
 
@@ -14,7 +13,7 @@ Front-End part of the banking application
 
 ### Achievement
 
-See the project online: [Demo](https://verapandi.github.io/argent-bank)
+See the project online: [Demo](https://verapandi.github.io/argent-bank/)
 
 ---
 
@@ -103,5 +102,4 @@ Once you run the populate-db script, you should have two users in your database:
 
 ## API Documentation
 
--  Once you have started your local environment, you can visit the `user API` documentation here: http://localhost:3001/api-docs
--  You can visit the `transaction API` documentation here : https://github.com/VeraPandi/argent-bank/blob/master/swagger/transactions.yaml
+Once you have started your local environment, you can visit the user API documentation here: http://localhost:3001/api-docs
