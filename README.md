@@ -1,70 +1,107 @@
-# Getting Started with Create React App
+# Argent Bank : Banking application
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+[![forthebadge](https://img.shields.io/badge/Made%20with-Create%20React%20App-%2361dafb)](https://reactjs.org/docs/create-a-new-react-app.html) [![forthebadge](https://img.shields.io/badge/Use-Redux-%23764abc)](https://recharts.org/en-US/)
 
-## Available Scripts
+Front-End part of the banking application
 
-In the project directory, you can run:
+![This is an image](Argent-Bank-Home.png)
+![Argent-Bank-Home](https://user-images.githubusercontent.com/84042427/177596107-f61bcc62-7950-4a34-9a07-a4c7bb0982c5.png)
 
-### `npm start`
+### Resources:
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+-  [Designs](https://github.com/OpenClassrooms-Student-Center/Project-10-Bank-API/tree/master/designs)
+-  [API Documentation](http://localhost:3001/api-docs) _You must launch the back-end to access this resource_
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+### Achievement
 
-### `npm test`
+See the project online: [Demo](https://verapandi.github.io/argent-bank)
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+---
 
-### `npm run build`
+# Installation guide
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+For the project to work properly for you, you need to install and launch the back-end first.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+### Prerequisites:
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+-  [![forthebadge](https://img.shields.io/badge/NodeJS-version%2016.14.2-%23026e00)](https://nodejs.org/en/)
+-  [MongoDB Community Server](https://www.mongodb.com/try/download/community)
 
-### `npm run eject`
+## 1. Install backend and dependencies
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+Go to this link and clone the back-end: https://github.com/OpenClassrooms-Student-Center/Project-10-Bank-API
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+Then, install the dependencies.
+Open the back-end folder. In the terminal, use the command:
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+```
+npm install
+```
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+## 2. Launch the back-end
 
-## Learn More
+In the terminal, start local dev server:
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+```
+npm run dev:server
+```
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+Then, the database:
 
-### Code Splitting
+```
+npm run populate-db
+```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+## 3. Install front-end and dependencies
 
-### Analyzing the Bundle Size
+Clone this repository: https://github.com/VeraPandi/argent-bank
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+Then, install the dependencies.
+Open the front-end folder. In the terminal, use the command:
 
-### Making a Progressive Web App
+```
+npm install
+```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+## 4. Launch the front-end
 
-### Advanced Configuration
+In the terminal, navigate to the back-end folder directory with:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+```
+cd Project-10-Bank-API-master
+```
 
-### Deployment
+Start local dev server with:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+```
+npm run dev:server
+```
 
-### `npm run build` fails to minify
+Then:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+```
+npm start
+```
+
+## Use the app
+
+Once you run the populate-db script, you should have two users in your database:
+
+### Tony Stark
+
+-  First Name: `Tony`
+-  Last Name: `Stark`
+-  Email: `tony@stark.com`
+-  Password: `password123`
+
+### Steve Rogers
+
+-  First Name: `Steve`
+-  Last Name: `Rogers`
+-  Email: `steve@rogers.com`
+-  Password: `password456`
+
+## API Documentation
+
+-  Once you have started your local environment, you can visit the `user API` documentation here: http://localhost:3001/api-docs
+-  You can visit the `transaction API` documentation here : https://github.com/VeraPandi/argent-bank/blob/master/swagger/transactions.yaml
