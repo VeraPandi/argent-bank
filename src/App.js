@@ -11,10 +11,11 @@ import Profile from "./pages/Profile";
 import Navigation from "./components/header/Navigation";
 import Footer from "./components/footer/Footer";
 import NotFound from "./pages/NotFound.jsx";
+import { userIsLoggedSelector } from "./utils/selectors.js";
 import "./styles/main.scss";
 
 const App = () => {
-   const isLogged = useSelector((state) => state.auth.isLogged);
+   const isLogged = useSelector(userIsLoggedSelector);
 
    return (
       <Router basename={process.env.PUBLIC_URL}>

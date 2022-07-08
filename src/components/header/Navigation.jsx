@@ -3,6 +3,7 @@ import { useSelector } from "react-redux";
 import Logo from "./Logo";
 import LoginLink from "./LoginLink";
 import LogoutLink from "./LogoutLink";
+import { userIsLoggedSelector } from "../../utils/selectors";
 
 /**
  * Manages a login and logout link depending on the user's login status
@@ -11,7 +12,7 @@ import LogoutLink from "./LogoutLink";
  */
 
 const Navigation = () => {
-   const isLogged = useSelector((state) => state.auth.isLogged);
+   const isLogged = useSelector(userIsLoggedSelector);
 
    return (
       <nav className="main-nav">

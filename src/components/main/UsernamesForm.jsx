@@ -1,6 +1,8 @@
 import React, { useState } from "react";
 import { useSelector, useDispatch } from "react-redux";
-import { editUserName } from "../../features/authService";
+import { editUserName } from "../../services/authService";
+import { editAction } from "../../features/actions";
+import { userAuthSelector, userTokenSelector } from "../../utils/selectors";
 
 /**
  * Displays input fields to change the first and last name on his profile
@@ -14,6 +16,8 @@ import { editUserName } from "../../features/authService";
  */
 
 const UserNamesForm = () => {
+   const dispatch = useDispatch();
+
    const [isOpen, setIsOpen] = useState(false);
    const [userName, setUserName] = useState({
       firstName: "",
@@ -22,10 +26,8 @@ const UserNamesForm = () => {
    const [newFirstName, setNewFirstName] = useState(userName.firstName);
    const [newLastName, setNewLastName] = useState(userName.lastName);
 
-   const dispatch = useDispatch();
-
-   const { user } = useSelector((state) => state.auth);
-   const token = useSelector((state) => state.auth.token);
+   const user = useSelector(userAuthSelector);
+   const token = useSelector(userTokenSelector);
 
    // Open the form
    const onEdit = () => {
@@ -63,11 +65,7 @@ const UserNamesForm = () => {
       }
 
       editUserName(userName, token);
-      dispatch({
-         type: "EDIT_USER",
-         payload: userName,
-      });
-
+      dispatch(editAction(userName));
       setIsOpen(false);
    };
 

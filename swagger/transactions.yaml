@@ -98,7 +98,7 @@ definitions:
          body:
             type: object
             properties:
-               id:
+               transaction_Id:
                   type: string
                date:
                   type: string
@@ -124,7 +124,7 @@ definitions:
          body:
             type: object
             properties:
-               id:
+               transaction_Id:
                   type: string
                description:
                   type: string

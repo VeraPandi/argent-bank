@@ -2,7 +2,8 @@ import React from "react";
 import { useState } from "react";
 import { useDispatch } from "react-redux";
 import { useNavigate } from "react-router-dom";
-import { getUserAuth } from "../../features/authService";
+import { getUserAuth } from "../../services/authService";
+import { loginAction } from "../../features/actions";
 
 /**
  * Displays a login form
@@ -12,13 +13,13 @@ import { getUserAuth } from "../../features/authService";
  */
 
 const LoginForm = () => {
+   const navigate = useNavigate();
+   const dispatch = useDispatch();
+
    const [loginData, setLoginData] = useState({
       email: "",
       password: "",
    });
-
-   const navigate = useNavigate();
-   const dispatch = useDispatch();
 
    const onChange = (e) => {
       setLoginData((prevState) => ({
@@ -32,10 +33,7 @@ const LoginForm = () => {
       e.preventDefault();
 
       getUserAuth(loginData).then((data) => {
-         dispatch({
-            type: "LOGIN_USER",
-            payload: data.body.token,
-         });
+         dispatch(loginAction(data));
          navigate("/profile");
       });
    };

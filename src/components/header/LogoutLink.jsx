@@ -4,14 +4,13 @@ import { useDispatch } from "react-redux";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faRightFromBracket } from "@fortawesome/free-solid-svg-icons";
 import Avatar from "../header/Avatar";
+import { logoutAction } from "../../features/actions";
 
 const LogoutLink = () => {
    const dispatch = useDispatch();
 
    const onLogout = () => {
-      dispatch({
-         type: "LOGOUT_USER",
-      });
+      dispatch(logoutAction());
    };
 
    return (

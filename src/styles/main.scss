@@ -1,7 +1,5 @@
 @use "./base/global";
 
-@use "./components/navigation";
-@use "./components/logo";
 @use "./components/loginLink";
 @use "./components/logoutLink";
 @use "./components/avatar";
@@ -10,7 +8,10 @@
 @use "./components/loginForm";
 @use "./components/account";
 @use "./components/userNamesForm";
-@use "./components/footer";
+
+@use "./layout/logo";
+@use "./layout/navigation";
+@use "./layout/footer";
 
 @use "./pages/login";
 @use "./pages/profile";
