@@ -24,11 +24,14 @@ body {
   margin: -1px;
   padding: 0;
   border: 0;
-  clip: rect(1px, 1px, 1px, 1px); /* 1 */
+  clip: rect(1px, 1px, 1px, 1px);
+  /* 1 */
   -webkit-clip-path: inset(50%);
-  clip-path: inset(50%); /* 2 */
+  clip-path: inset(50%);
+  /* 2 */
   overflow: hidden;
-  white-space: nowrap; /* 3 */
+  white-space: nowrap;
+  /* 3 */
 }
 
 .main-nav-item {
@@ -110,6 +113,7 @@ body {
     height: 400px;
     background-position: 0% 33%;
   }
+
   .hero-content {
     position: absolute;
     top: 50px;
@@ -117,9 +121,11 @@ body {
     width: 300px;
     margin: 2rem;
   }
+
   .hero-content .subtitle {
     font-size: 1.5rem;
   }
+
   .hero-content .text {
     font-size: 1.2rem;
   }
@@ -247,9 +253,11 @@ body {
   .account {
     flex-direction: row;
   }
+
   .account-content-wrapper.cta {
     flex: 0;
   }
+
   .transaction-button {
     width: 200px;
   }
@@ -388,5 +396,4 @@ body {
 
 .back-link {
   color: #2c3e50;
-}
-/*# sourceMappingURL=main.css.map */
+}/*# sourceMappingURL=main.css.map */
