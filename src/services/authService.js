@@ -1,8 +1,8 @@
 import axios from "axios";
 
 const BASE_URL = "http://localhost:3001/api/v1";
-const PROFILE_ENDPOINT = "/user/profile";
-const LOGIN_ENDPOINT = "/user/login";
+const PROFILE_URI = "/user/profile";
+const LOGIN_URI = "/user/login";
 
 /**
  * Get a token for the user
@@ -13,7 +13,7 @@ const LOGIN_ENDPOINT = "/user/login";
 
 export const getUserAuth = async (userData) => {
    try {
-      const response = await axios.post(BASE_URL + LOGIN_ENDPOINT, userData);
+      const response = await axios.post(BASE_URL + LOGIN_URI, userData);
       return response.data;
    } catch (error) {
       console.error(error);
@@ -30,7 +30,7 @@ export const getUserAuth = async (userData) => {
 export const getUserData = async (token) => {
    try {
       const response = await axios.post(
-         BASE_URL + PROFILE_ENDPOINT,
+         BASE_URL + PROFILE_URI,
          {},
          { headers: { authorization: "Bearer" + token } }
       );
@@ -51,7 +51,7 @@ export const getUserData = async (token) => {
 export const editUserName = async (userName, token) => {
    try {
       const response = await axios.put(
-         BASE_URL + PROFILE_ENDPOINT,
+         BASE_URL + PROFILE_URI,
          {
             firstName: userName.firstName,
             lastName: userName.lastName,

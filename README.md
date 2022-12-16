@@ -1,6 +1,6 @@
 # Argent Bank : Banking application
 
-[![forthebadge](https://img.shields.io/badge/Made%20with-Create%20React%20App-%2361dafb)](https://reactjs.org/docs/create-a-new-react-app.html) [![forthebadge](https://img.shields.io/badge/Use-Redux-%23764abc)](https://recharts.org/en-US/)
+[![forthebadge](https://img.shields.io/badge/Made%20with-Create%20React%20App-%2361dafb)](https://reactjs.org/docs/create-a-new-react-app.html) [![forthebadge](https://img.shields.io/badge/Use-Redux-%23764abc)](https://redux.js.org/en-US/)
 
 ### Front-End part of the banking application
 
